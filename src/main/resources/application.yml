@@ -12,11 +12,18 @@
 #  application:
 #    name: SERVICE-REGISTRY
 
+server:
+  port: 8761
 spring:
   application:
     name: "service"
   profiles:
     active: "discovery"
-
-  config:
-    import: "optional:configserver:http://3.132.56.186:8888"
+eureka:
+  instance:
+    hostname: 3.132.56.186
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+#  config:
+#    import: "optional:configserver:http://3.132.56.186:8888"
