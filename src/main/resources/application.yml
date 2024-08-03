@@ -28,4 +28,4 @@ spring:
     active: "discovery"
 
   config:
-    import: "optional:configserver:http://localhost:8888"
+    import: "optional:configserver:http://3.132.56.186:8888"
