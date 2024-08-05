@@ -19,7 +19,7 @@ spring:
     name: SERVICE-DISCOVERY
 eureka:
   instance:
-    hostname: 3.132.56.186
+    hostname: 65.0.180.219
   client:
     register-with-eureka: false
     fetch-registry: false
